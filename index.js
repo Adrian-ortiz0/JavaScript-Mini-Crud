@@ -7,7 +7,7 @@ function menu(){
         opt = window.prompt("Que deseas hacer? \n 1. Registrar Usuarios \n 2. Listar Usuarios \n 3. Salir");
         
         if (opt === "1") {
-            window.alert("Registro")
+            registro()
         } else if (opt === "2"){
             window.alert("Listar")
         } else if (opt === "3"){
@@ -30,6 +30,12 @@ function registro(){
     usuarios.push(usuario);
     window.alert("Se registro correctamente!")
     
+}
+
+function listar(){
+    usuarios.forEach((user) => {
+        window.alert(`ID: ${user.identificacion} | Nombre: ${user.nombre} | Celular: ${user.celular}`)
+    })
 }
 
 menu()
