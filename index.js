@@ -9,7 +9,7 @@ function menu(){
         if (opt === "1") {
             registro()
         } else if (opt === "2"){
-            window.alert("Listar")
+            listar()
         } else if (opt === "3"){
             window.alert("Saliendo...")
             break
